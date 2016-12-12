@@ -1,0 +1,6 @@
+$ cat .gitignore
+*.[oa]
+*~
+*.JSON
+/img
+/font

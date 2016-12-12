@@ -1,0 +1,401 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-11-19, 21:14:13
+    Author     : marek
+*/
+body{
+    margin:0px;
+    background: black;
+}
+*{
+    box-sizing:border-box;
+}
+.container{
+        width: 100%;
+        margin: auto;
+        /*background: white;*/
+}
+
+.top-belt{
+    width: 100%;
+    height: 65px;
+    background: #292929;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    display: block;
+    /*position: sticky;*/
+    
+}
+.name-site a{
+   
+    text-decoration:none;
+    color: white;
+}
+
+.name-site{
+    float: left;
+}
+.nav-top-belt{
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-hamburger{
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px; 
+}
+
+.right-belt{
+ float:right;   
+}
+.nav-hamburger{
+    float: left;
+}
+
+.menu
+{
+   
+    display: none;
+}
+
+.header{
+  clear: both;
+  background: black;
+  /*background:#222930;*/
+  
+ 
+}
+.logo{
+ padding-top: 30px;
+ padding-bottom: 30px;
+ margin-left:auto;
+ margin-right:auto;
+ width:660px;
+ height:594px;  
+}
+.logo img{
+ margin-left:auto;
+ margin-right:auto;
+ width:100%;
+ height:100%;
+}
+
+.portfolio-name{
+ width: 100%;
+ padding-top: 20px;
+ padding-bottom: 20px; 
+ font-family: 'Alex Brush', cursive;
+ color: #48914C;
+ text-align: center;
+ font-size: 50px;
+ font-weight: 900;
+ clear: both; 
+}
+
+.nav-contener{
+    width: 100%;
+    background: #48914C;
+    /*background: #1abc9c;*/
+    margin:auto;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    /*height: 90px;*/
+   
+}
+.navigation{
+ width:65%;
+ height: 60px;
+ /*background: #292929;*/
+ background: #48914C;
+ /*background: #1abc9c;*/
+ padding: 10px;
+ margin:auto;
+ /*margin-bottom: 40px;*/
+
+}
+
+.nav-part{
+    font-family: 'Inconsolata', monospace;
+    font-size: 35px;
+    color: white;
+    float: left;
+    margin: 1px;
+    width: 33%;
+    font-weight: 900;
+    display: inline-block;
+    text-align: center; 
+   
+}
+.black-line{
+    width: 100%;
+    background: black;
+    height: 90px;
+    clear: both;
+}
+
+.nav-part:hover{
+    color: #48914C;
+    background: white;
+    cursor: pointer;
+    border-radius: 6px;
+   
+	
+}
+main{
+    width: 80%; /* 1300px*/
+    margin: auto;
+    background-color:#404040;
+    background-color: white;
+}
+
+
+
+.my-photo{
+    padding: 40px;
+    
+}
+
+.socjal{
+    margin-top: 70px;
+    width: 100%;
+    height: 224px;
+    background:#2D3E50;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+.social-contener{
+    width: 865px;
+    height: 222px;
+    margin: auto;
+}
+.fb{
+        float: left;
+	text-decoration:none;
+        
+	
+}
+
+.fb > a{
+	text-decoration:none;
+	color: white;
+}
+
+.fb:hover{
+	background-color: #4668b3;
+	cursor: pointer;
+}
+
+.yt { 
+	float: left;
+	text-decoration:none;
+        
+       
+	
+}
+
+.yt > a {
+	text-decoration:none;
+	color: white;
+}
+.yt:hover{
+	background-color: #d94348;
+	cursor: pointer;
+}
+.gplus{
+        float: left;
+	text-decoration:none;
+       
+       
+	
+}
+.gplus:hover{
+	background-color: #d95333;
+	cursor: pointer;
+}
+.gplus > a {
+	text-decoration:none;
+	color: white;
+}
+
+
+.footer{
+    padding-top: 80px;
+    width: 100%;
+    height: 240px;
+    font-family: 'Alex Brush', cursive;
+    color: #48914C;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    background: black;
+    font-size: 40px;
+    font-weight: 900;
+   
+}
+.nav-hamburger{
+    display: none;
+}
+
+
+
+@media(max-width: 1100px){
+ .navigation{
+ display: none;
+ 
+}  
+.nav-contener{
+    display: none;
+}
+.nav-top-belt{
+    display: none;
+}
+.nav-hamburger{
+    display: inline;
+}
+
+.hamburger{
+  display: inline;
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.cross{
+  display: inline;
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:13px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu{width: 100%; font-family: 'Inconsolata', monospace;  font-weight:bold; font-size:1.0em; width:100%; background:#131313;  /*position:absolute; jak to uzyje to nadpisuje*/ text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#48914C;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+  
+.logo{
+ padding-top: 30px;
+ padding-bottom: 30px;
+ margin-left:auto;
+ margin-right:auto;
+ width:100%;
+ height:100%;  
+}
+.logo img{
+ margin-left:auto;
+ margin-right:auto;
+ width:100%;
+ height:100%;
+}
+
+.portfolio-name{
+ width: 100%;
+ padding-top: 20px;
+ padding-bottom: 20px; 
+ font-family: 'Alex Brush', cursive;
+ color: #48914C;
+ text-align: center;
+ font-size: 30px;
+ font-weight: 900;
+ clear: both; 
+}
+
+main{
+    width: 100%;
+    height:100%; 
+    margin: 0;
+    background-color: white;
+}
+
+.my-photo{
+   
+    width: 100%;
+    height:100%; 
+    margin: auto;
+    padding:20px 0 0 0;
+    
+}
+.my-photo img{
+    width: 100%;
+    padding: 20px;
+}
+.socjal{
+   width: 100%;
+   height: 667px;
+   
+
+}
+.social-contener{
+   width: 100%;
+   margin:auto;
+}
+
+.footer{
+    padding-top: 80px;
+    width: 100%;
+    font-family: 'Alex Brush', cursive;
+    color: #48914C;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    background: black;
+    font-size: 25px;
+    font-weight: 900;
+   
+}
+.fb{
+        width:100%;
+        text-align: center;
+        margin: auto;
+        clear: both;
+	text-decoration:none;
+        
+	
+}
+.yt{
+        width:100%;
+        text-align: center;
+        margin: auto;
+        clear: both;
+	text-decoration:none;  
+}
+.gplus{
+        width:100%;
+        text-align: center;
+        margin: auto;
+        clear: both;
+	text-decoration:none;
+}
+
+}
