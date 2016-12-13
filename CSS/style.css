@@ -69,28 +69,28 @@ body{
 .header{
   clear: both;
   background: black;
-  /*background:#222930;*/
+  margin-top: 30px;
   
  
 }
 .logo{
- padding-top: 30px;
- padding-bottom: 30px;
+/* padding-top: 30px;
+ padding-bottom: 30px;*/
  margin-left:auto;
  margin-right:auto;
- width:660px;
- height:594px;  
+ width:494px;
+ height:487px;  
 }
 .logo img{
  margin-left:auto;
  margin-right:auto;
- width:100%;
- height:100%;
+/* width:100%;
+ height:100%;*/
 }
 
 .portfolio-name{
  width: 100%;
- padding-top: 20px;
+ padding-top: 40px;
  padding-bottom: 20px; 
  font-family: 'Alex Brush', cursive;
  color: #48914C;
@@ -309,24 +309,26 @@ main{
  padding-bottom: 30px;
  margin-left:auto;
  margin-right:auto;
- width:100%;
- height:100%;  
+ 
+/* width:100%;
+ height:100%;  */
 }
 .logo img{
  margin-left:auto;
  margin-right:auto;
- width:100%;
- height:100%;
+
+/* width:100%;
+ height:100%;*/
 }
 
 .portfolio-name{
- width: 100%;
- padding-top: 20px;
- padding-bottom: 20px; 
+ /*width: 100%;*/
+/* padding-top: 20px;
+ padding-bottom: 20px; */
  font-family: 'Alex Brush', cursive;
  color: #48914C;
  text-align: center;
- font-size: 30px;
+ font-size: 50px;
  font-weight: 900;
  clear: both; 
 }
@@ -398,4 +400,22 @@ main{
 	text-decoration:none;
 }
 
+}
+
+@media(max-width: 513px){
+  
+.logo{
+ width: 100%;
+ height: 100%
+}
+
+.logo img{
+width:100%;
+height: 100%
+
+}
+
+.portfolio-name{
+    padding-top: 0;
+}
 }
