@@ -18,44 +18,60 @@ and open the template in the editor.
 	<meta name="keywords" content="Marek, Wudarczyk, Marek Wudarczyk, Elektronika, Programowanie, Survival " />
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
         <link rel="stylesheet" href="css/fontello.css" type="text/css" />
-       
+     <script>
+	$(document).ready(function() {
+	var NavY = $('.belt').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.belt').addClass('sticky');
+	} else {
+		$('.belt').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+    </script>  
     
     </head>
     <body>
         <div class="container">
-            <div class="top-belt">
-                <div class="name-site"><a href="#" title="Go back to homepage">Portfolio</a></div>
-                <div class="right-belt">
-                <div class="nav-top-belt" title="Go back to homepage">Home</div>
-                <div class="nav-top-belt" title="Napisz do mnie">Kontakt</div>
-                <nav class="nav-hamburger" title="Menu">
-                    <button class="hamburger">&#9776;</button>
-                    <button class="cross">&#735;</button>
-                </nav>
-                </div>
-            </div>
-              <div class="menu">
-                    <ul>
-                        <li><a href="#" title="Kontakt">Kontakt</a></li>
-                        <li><a href="#" title="Programowanie">Programowanie</a></li>
-                        <li><a href="#" title="Elektronika">Elekronika</a></li>
-                        <li><a href="#" title="Programowanie">Survival</a></li> 
-                    </ul>
+            <div class="belt">
+                <div class="top-belt">
+                    <div class="name-site"><a href="#" title="My Portfolio">Portfolio</a></div>
+                    <div class="right-belt">
+                        <div class="nav-top-belt"><a href="#" title="Go back to homepage">Home</a></div>
+                        <div class="nav-top-belt"><a href="#" title="Kilka słów o Marecki">O mnie</a></div>
+                        <div class="nav-top-belt"><a href="#" title="Napisz do mnie">Kontakt</a></div>
+                        <nav class="nav-hamburger" title="Menu">
+                            <button class="hamburger">&#9776;</button>
+                            <button class="cross">&#735;</button>
+                        </nav>
                     </div>
+                </div>
+               <div class="menu">
+                    <ul>
+                        <li><a href="#" title="Home">Home</a></li>
+                        <li><a href="#" title="O mnie">O mnie</a></li>
+                        <li><a href="#" title="Kontakt">Kontakt</a></li>                       
+                    </ul>
+              </div>
+            </div> 
+               
             <header class="header">
                 <div class="logo"><img src="img/ja.png" alt=" Marek Wudarczyk - author portfolio"></div>
-             <div class="portfolio-name">Marek Wudarczyk</div>
-             <div class="nav-contener">
-             <div class="navigation">
-                    <div class="nav-part">Programowanie</div>
-                    <div class="nav-part">Elektronika</div>
-                    <div class="nav-part">Survival</div>  
-                </div>
-                 </div>
+                <div class="portfolio-name"><p>Marek Wudarczyk</p></div>
               <div class="black-line"></div>
             </header>    
             <main>
-               
                 <div class="my-photo" title="my foto and info about me"><img src="img/ja.png" alt=" Marek Wudarczyk - author portfolio"> <p> Jestem marek łowca szparek</p></div>
             </main>  
             <footer>
@@ -67,9 +83,7 @@ and open the template in the editor.
                 </div>
                     </div>
                 <div class="footer">Copyright &copy・2016・Marek Wudarczyk</div>
-            </footer>      
-            
-            
+            </footer>          
         </div>
     </body>
 </html>
