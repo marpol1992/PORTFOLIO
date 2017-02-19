@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
  
-
+//
 $(document).ready(function(){
     $( window ).resize(function() {
        if($( window ).width()>=710){
@@ -18,18 +18,22 @@ $(document).ready(function(){
 $(".menu").hide();
 $( ".cross" ).hide();
 $( ".menu" ).hide();
-$( ".hamburger" ).click(function() {
-    
+
+$( ".hamburger" ).click(function() {   
 $( ".menu" ).slideToggle( "slow", function() {
-$( ".hamburger" ).hide();
-$( ".cross" ).show();
+//    $(".hamburger").css("transform", "rotate(45deg) translateY(5px)");
+//    $(".hamburger").css("border", "none");
+//    $(".hamburger:first").addClass("change");
+    
+//$( ".hamburger" ).hide();
+//$( ".cross" ).show();
 });
 });
 
 $( ".cross" ).click(function() {
 $( ".menu" ).slideToggle( "slow", function() {
-$( ".cross" ).hide();
-$( ".hamburger" ).show();
+//$( ".cross" ).hide();
+//$( ".hamburger" ).show();
 });
 });
 });

@@ -38,25 +38,28 @@ body{
     background: #292929;
     font-family: 'Inconsolata', monospace;
     color: white;
-    padding: 20px;
     font-size: 25px;
     display: block;
     height: 60px;
   
 }
+.name-site{
+    float: left;
+    padding-left: 20px;
+    padding-top: 17px;
+}
+
 .name-site a{
-   
     text-decoration:none;
     color: white;
 }
 
-.name-site{
-    float: left;
-}
+
 .nav-top-belt{
     float: left;
-    padding-right: 20px;
     padding-left: 20px;
+    padding-top: 17px;
+    padding-right: 15px;
 }
 .nav-top-belt a{
    
@@ -65,8 +68,8 @@ body{
 }
 .nav-hamburger{
     float: left;
-    padding-right: 20px;
-    padding-left: 20px; 
+    padding-top:13px;
+    padding-right: 15px;
     display: none;
 }
 
@@ -284,7 +287,7 @@ main{
     display: inline;
 }
 
-.hamburger{
+/*.hamburger{
   display: inline;
   background:none;
   position:absolute;
@@ -299,7 +302,7 @@ main{
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
-}
+}*/
 
 .cross{
   display: inline;
@@ -317,6 +320,41 @@ main{
   outline:none;
   z-index:10000000000000;
 }
+.hamburger {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid #ffffff;
+  background: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
+  outline:0;
+}
+
+.hamburger::before, .hamburger::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid #ffffff;
+  transform: translateY(10px);
+}
+
+.hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
+}
+
+.hamburger:focus {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+
+.hamburger:focus::after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+
 
 .menu{ width: 100%; font-family: 'Inconsolata', monospace;  font-weight:bold; font-size:1.5em; width:100%; background:#131313; position:absolute;  text-align:center;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
