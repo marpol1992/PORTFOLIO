@@ -10,7 +10,6 @@ and open the template in the editor.
 body{
     margin:0px;
     background: black;
-    margin:0;
     padding: 0;
 }
 *{
@@ -26,6 +25,13 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+   
 }
 .top-belt{
     width: 100%;
@@ -36,11 +42,7 @@ body{
     font-size: 25px;
     display: block;
     height: 60px;
-	
-	
-	
-    /*position: sticky;*/
-    
+  
 }
 .name-site a{
    
@@ -86,11 +88,12 @@ body{
 .header{
   /*clear: both;*/
   background: black;
-  margin-top: 15px;
+  padding-top: 80px;
 }
 .logo{
 /* padding-top: 30px;
  padding-bottom: 30px;*/
+ padding-top: 0px;
  margin-left:auto;
  margin-right:auto;
  width:494px;
@@ -105,10 +108,8 @@ body{
 
 .portfolio-name p{
  width: 380px;
- 
  margin: auto;
- padding-top: 30px;
- padding-bottom: 20px; 
+ padding-top: 20px;
  font-family: 'Alex Brush', cursive;
  color: #48914C;
  text-align: center;
@@ -154,7 +155,7 @@ body{
 .sticky{
 	margin-top: 0px;
 	width: 100%;
-	position: fixed;
+	/*position: fixed;*/
 	left: 0;
 	top: 0;
 	z-index: 100;
@@ -162,7 +163,7 @@ body{
 .black-line{
     width: 100%;
     background: black;
-    height: 90px;
+    height: 40px;
     clear: both;
 }
 
