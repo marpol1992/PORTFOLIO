@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
- 
+ function myFunction(x) {
+    x.classList.toggle("change");
+}
 
 $(document).ready(function(){
     $( window ).resize(function() {
@@ -21,15 +23,13 @@ $( ".menu" ).hide();
 $( ".hamburger" ).click(function() {
     
 $( ".menu" ).slideToggle( "slow", function() {
-$( ".hamburger" ).hide();
-$( ".cross" ).show();
+
 });
 });
 
 $( ".cross" ).click(function() {
 $( ".menu" ).slideToggle( "slow", function() {
-$( ".cross" ).hide();
-$( ".hamburger" ).show();
+
 });
 });
 });
