@@ -38,7 +38,7 @@ body{
     background: #292929;
     font-family: 'Inconsolata', monospace;
     color: white;
-    padding: 20px;
+    /*padding: 20px;*/
     font-size: 25px;
     display: block;
     height: 60px;
@@ -55,6 +55,7 @@ body{
 }
 .nav-top-belt{
     float: left;
+    padding-top: 15px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -64,16 +65,14 @@ body{
     color: white;
 }
 .nav-hamburger{
-    float: left;
-    padding-right: 20px;
-    padding-left: 20px; 
+    float: left; 
     display: none;
 }
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: white;
-    margin: 6px 0;
+    margin: 8px 0;
     transition: 0.4s;
 }
 .right-belt{
@@ -191,8 +190,7 @@ main{
 
 
 .my-photo{
-    padding: 40px;
-    
+    padding: 40px; 
 }
 
 .socjal{
@@ -291,15 +289,15 @@ main{
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 7px) ;
+    /*-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;*/
+    transform: rotate(-45deg) translateY(7px) translateX(-11px) ;
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -7px) ;
+    /*-webkit-transform: rotate(45deg) translate(-8px, -8px) ;*/
+    transform: rotate(45deg) translateY(-7px) translateX(-11px);
 }
 
 .hamburger{
@@ -309,7 +307,7 @@ main{
   top:0px;
   right:0;
   line-height:45px;
-  padding:5px 15px 0px 15px;
+  padding: 7px 15px 0px 15px;
   color:#fff;
   border:0;
   font-size:1.4em;

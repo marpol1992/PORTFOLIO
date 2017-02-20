@@ -3,16 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+var objekt;
+var flaga = false;
  function myFunction(x) {
-    x.classList.toggle("change");
+     objekt = x;
+   
 }
 
 $(document).ready(function(){
     $( window ).resize(function() {
-       if($( window ).width()>=710){
+        
+       if(($( window ).width()>710) && (flaga)){
         $( ".menu" ). hide();
-        $( ".cross" ).hide();
-        $( ".hamburger" ).show();
+        flaga = false;
+        objekt.classList.toggle("change");
        } 
         
         
@@ -20,14 +24,18 @@ $(document).ready(function(){
 $(".menu").hide();
 $( ".cross" ).hide();
 $( ".menu" ).hide();
+
 $( ".hamburger" ).click(function() {
-    
+     objekt.classList.toggle("change");
+     flaga = !flaga;
 $( ".menu" ).slideToggle( "slow", function() {
 
 });
 });
 
 $( ".cross" ).click(function() {
+    flaga = 0;
+     objekt.classList.toggle("change");
 $( ".menu" ).slideToggle( "slow", function() {
 
 });
